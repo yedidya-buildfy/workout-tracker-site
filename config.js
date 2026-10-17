@@ -10,12 +10,12 @@
  * the one-line command in README.md to bake it into the HTML.
  */
 var SITE = {
-  appName: 'Workout Tracker',
+  appName: 'Balio',
   icon: 'icon.png'
 };
 
 (function () {
-  var DEFAULT_NAME = 'Workout Tracker';
+  var DEFAULT_NAME = 'Balio';
   var name = SITE.appName;
   var i, els;
 
