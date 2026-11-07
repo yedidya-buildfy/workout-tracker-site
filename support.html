@@ -63,10 +63,10 @@
       </ul>
 
       <h3 id="account">Do I need an account?</h3>
-      <p>No. There is no sign-up and no log-in. The app opens straight onto your Dashboard and works without the internet. The only feature that goes online is food search.</p>
+      <p>No. There is no sign-up and no log-in. The app opens straight onto your Dashboard and works without the internet. Only food search and the optional AI help (muscles for a new exercise, reading a label, recognizing a meal photo) go online; AI help can be switched off in Settings.</p>
 
       <h3 id="data">Where is my data stored?</h3>
-      <p>Only on your phone, inside the app’s private storage. We don’t run a server, so we never receive your workouts, food log, measurements or photos, and we can’t see, recover or delete them for you. That is also why backups are in your hands (see the next question).</p>
+      <p>Only on your phone, inside the app’s private storage. We never receive your workouts, food log, measurements or photos, and we can’t see, recover or delete them for you. That is also why backups are in your hands (see the next question).</p>
 
       <h3 id="backup">How do I back up and restore?</h3>
       <p>Open <span class="path-wrap">Settings › Backup</span> in the app (from the More tab, choose <span class="path">Modules &amp; settings</span>).</p>
@@ -77,12 +77,12 @@
       <p>Good to know:</p>
       <ul>
         <li><strong>Progress photos are not included</strong> in the backup file. They stay only on the phone. To keep a photo, export it to your Photos library from the photo itself.</li>
-        <li><strong>The app’s data is part of your iPhone’s own backup</strong> (iCloud Backup or a backup to your computer), like other apps’ data. We never receive it. Progress photos are left out of it.</li>
+        <li><strong>Your entries are part of your iPhone’s own backup</strong> (iCloud Backup or a backup to your computer), like other apps’ data. We never receive it. Values read from Apple Health aren’t copied into backups (the app reads them from Apple Health again), and progress photos aren’t backed up.</li>
         <li>Moving to a new iPhone: restoring from your iPhone backup, or transferring directly from your old iPhone, brings your data along. <strong>Progress photos don’t come along</strong>, so export them to your Photos library first. Export backup still works as a manual copy: save the file somewhere the new phone can reach (AirDrop, Files, iCloud Drive), install the app and choose Restore from backup.</li>
       </ul>
 
       <h3 id="health">How does Apple Health work, and how do I turn it off?</h3>
-      <p>Apple Health is optional and <strong>read-only</strong>: the app can read your steps, sleep and body weight to show them in its trackers, and it never writes anything to Health. iOS asks for permission only when you switch a tracker’s source to Apple Health or turn on the Steps tracker. Health data the app reads is stored on your phone and included only in your iPhone’s own backup; the app never sends it to us or to any iCloud service.</p>
+      <p>Apple Health is optional and <strong>read-only</strong>: the app can read your steps, sleep and body weight to show them in its trackers, and it never writes anything to Health. iOS asks for permission only when you switch a tracker’s source to Apple Health or turn on the Steps tracker. Values read from Apple Health stay on your phone and aren’t copied into iCloud or computer backups, or into Export backup; after a restore or on a new iPhone the app reads them from Apple Health again. The app never sends Health data to us or to any iCloud service.</p>
       <p>To turn it off, open the iPhone’s <span class="path-wrap">Settings › Health › Data Access &amp; Devices</span>, choose <span data-app-name>Balio</span> and switch off the data types. You can also switch the tracker’s source back to manual entry inside the app. Values that were already read stay in the app on your phone until you delete the app.</p>
       <p>If a tracker shows no Health data, check the same screen: iOS doesn’t tell apps when reading is denied, so the app can only show nothing.</p>
 

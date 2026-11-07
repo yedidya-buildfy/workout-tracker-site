@@ -33,31 +33,33 @@
   <article class="wrap doc">
     <p class="eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="dates">Effective date: <time datetime="2026-10-18">18 October 2026</time></p>
+    <p class="dates">Effective date: <time datetime="2026-11-07">7 November 2026</time></p>
     <p class="lead"><span data-app-name>Balio</span> (“the app”) is made by Yedidya Dan (“we”, “us”). This policy explains what happens to your information when you use the app.</p>
 
     <section aria-labelledby="short">
       <div class="card tint">
         <h2 id="short">The short version</h2>
         <ul>
-          <li><strong>We collect no data.</strong> No account, no sign-up, no analytics, no ads, no tracking.</li>
-          <li><strong>Everything you enter is stored on your phone</strong>, and in your iPhone’s own backup like other apps’ data. We don’t run a server and never receive your data.</li>
-          <li><strong>The only thing that leaves your phone</strong> is the text you type into food search, or a barcode you scan. It goes straight to two public food databases to look up nutrition values.</li>
-          <li><strong>Apple Health is read-only</strong> and optional. The app never sends Health data to us or to any iCloud service.</li>
+          <li><strong>We collect no personal data.</strong> No account, no sign-up, no analytics, no ads, no tracking.</li>
+          <li><strong>Everything you enter is stored on your phone</strong>, and your entries are in your iPhone’s own backup like other apps’ data. We never receive your workouts, food log or other data.</li>
+          <li><strong>Optional AI help:</strong> to fill in an exercise’s muscles, read a label or recognize a meal, only that exercise name or that one photo is sent to our server and processed by Anthropic’s Claude. Nothing is kept. You can switch it off in Settings.</li>
+          <li><strong>Food lookups:</strong> the text you type into food search, or a barcode you scan, goes straight to two public food databases to look up nutrition values.</li>
+          <li><strong>Apple Health is read-only</strong> and optional. Values read from Apple Health aren’t copied into backups; they’re read again from Apple Health. The app never sends Health data to us or to any iCloud service.</li>
+          <li><strong>Progress photos aren’t backed up</strong> and are never uploaded.</li>
         </ul>
       </div>
     </section>
 
     <section aria-labelledby="collect">
       <h2 id="collect">Information we collect</h2>
-      <p>None. The app has no account system, no analytics or crash-reporting tools, no advertising, and no third-party code that collects data. It does not track you across apps or websites and does not use the advertising identifier. We never sell or share personal information, because we never have it.</p>
+      <p>No personal data. The app has no account system, no analytics or crash-reporting tools, no advertising, and no third-party code that collects data. It does not track you across apps or websites and does not use the advertising identifier. We never sell or share personal information, because we never have it. Our only server is the one behind the optional AI help (see <a href="#ai">AI help</a>), and it keeps nothing you send.</p>
       <p>If you have chosen in iOS to share analytics with app developers, Apple may give us anonymous crash reports and usage statistics about the app. These come from Apple under Apple’s privacy policy, not from the app, and cannot identify you.</p>
     </section>
 
     <section aria-labelledby="stored">
       <h2 id="stored">What the app stores, and where</h2>
       <p>Workouts, exercises, plans and training blocks, your food log and food list, water, coffee, supplements, sleep, body weight, steps, reminders, goals, profile details (such as height, weight and personal records) and settings are saved in the app’s private storage <strong>on your device</strong>. Other apps can’t read it and we can’t access it.</p>
-      <p>Like other apps’ data, this data is <strong>part of your iPhone’s own device backup</strong> (iCloud Backup, or a backup to your computer), so restoring your iPhone or moving to a new one brings it along. That backup is made by iOS and protected by Apple’s encryption or your computer’s settings; we never receive it. Progress photos are the exception (see below). You can also keep your own copy with Export backup.</p>
+      <p>Like other apps’ data, your entries are <strong>part of your iPhone’s own device backup</strong> (iCloud Backup, or a backup to your computer), so restoring your iPhone or moving to a new one brings them along. That backup is made by iOS and protected by Apple’s encryption or your computer’s settings; we never receive it. Two exceptions: values read from Apple Health (see <a href="#health">Apple Health</a>) and progress photos (see below). You can also keep your own copy with Export backup.</p>
     </section>
 
     <section aria-labelledby="photos">
@@ -66,14 +68,25 @@
     </section>
 
     <section aria-labelledby="food">
-      <h2 id="food">Food lookups (the only network use)</h2>
+      <h2 id="food">Food lookups</h2>
       <p>When you search for a food or scan a barcode, the app sends <strong>only the search text or the barcode number</strong> directly from your phone to:</p>
       <ul>
         <li><strong>Open Food Facts</strong> (openfoodfacts.org): search text and barcodes. <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a></li>
         <li><strong>USDA FoodData Central</strong> (fdc.nal.usda.gov), run by the U.S. Department of Agriculture: search text only. <a href="https://www.usda.gov/privacy-policy">USDA privacy policy</a></li>
       </ul>
       <p>These requests contain no name, e-mail, account or device identifier. They carry only a generic app name and, for USDA, an access key that identifies the app, not you. Like any website, these services can see your phone’s IP address when it contacts them; their own privacy policies apply to that. We don’t receive or keep these requests. Results are saved on your phone so the same food works offline next time.</p>
-      <p>Barcodes are read by the camera on your phone. When you photograph a nutrition label, the text is read <strong>on your phone</strong> with Apple’s built-in text recognition; the photo is deleted right after it has been read and is never uploaded.</p>
+      <p>Barcodes are read by the camera on your phone. When you photograph a nutrition label, the text is first read <strong>on your phone</strong> with Apple’s built-in text recognition, and the photo file is deleted right after. If AI help is off, the photo never leaves your phone and anything it couldn’t read, you type in. If AI help is on and the phone couldn’t read the label, the photo is sent once for reading as described below.</p>
+    </section>
+
+    <section aria-labelledby="ai">
+      <h2 id="ai">AI help (optional)</h2>
+      <p>Some features can use AI: filling in which muscles a new exercise works, reading a nutrition label the phone couldn’t read on its own, and recognizing the foods in a meal photo. Before the first use the app shows a notice, and you can turn <strong>AI help</strong> off at any time in Settings; everything still works by hand.</p>
+      <ul>
+        <li><strong>What is sent:</strong> only the exercise name, or the one photo you took or picked for that label or meal, together with a random install ID the app makes on your phone. The install ID is not linked to your name, e-mail, Apple ID or device and is used only to count the daily limit of AI requests.</li>
+        <li><strong>Where it goes:</strong> to our server, which passes it to <strong>Anthropic</strong> (the maker of Claude) for processing and returns the result to your phone. <a href="https://www.anthropic.com/legal/privacy">Anthropic privacy policy</a>. Anthropic does not use this data to train its models.</li>
+        <li><strong>What is kept:</strong> our server does not store or log the names or photos it receives. It keeps only a count of requests per install ID for the current day, which resets daily. Anthropic may keep API requests for a limited time for safety and abuse monitoring under its own policy.</li>
+        <li>Photos are not used for advertising, profiling or anything else. On your phone, the temporary photo file is deleted when you leave the screen.</li>
+      </ul>
     </section>
 
     <section aria-labelledby="health">
@@ -82,7 +95,8 @@
       <ul>
         <li>Health data is used only inside the app, on your phone, to show you your own numbers.</li>
         <li>It is never sent anywhere, never shared with anyone, and never used for advertising, marketing or data mining.</li>
-        <li>It is stored on your phone and is included only in your iPhone’s own device backup, like the rest of the app’s data. The app never sends it to us or to any iCloud service.</li>
+        <li>Values read from Apple Health are kept on your phone in a separate place that is <strong>not included in iCloud or computer backups</strong> of your iPhone, nor in Export backup. After a restore or on a new iPhone, the app reads them from Apple Health again. The app never sends Health data to us or to any iCloud service.</li>
+        <li>Fixes you type in yourself (for example a corrected step count) are part of your entries and are backed up with them.</li>
       </ul>
       <p>You can stop access at any time in the iPhone’s <span class="path-wrap">Settings › Health › Data Access &amp; Devices</span> › <span data-app-name>Balio</span>. Values already read stay in the app on your phone until you delete the app.</p>
     </section>
@@ -91,7 +105,7 @@
       <h2 id="perms">Camera, photos and notifications</h2>
       <p>The app asks for each permission only when you first use the feature that needs it, and works without it.</p>
       <ul>
-        <li><strong>Camera</strong>: only to scan a barcode, read a nutrition label or take a progress photo. Images are processed on your phone.</li>
+        <li><strong>Camera</strong>: only to scan a barcode, read a nutrition label, photograph a meal or take a progress photo. Images are processed on your phone; only a label or meal photo you choose to send with AI help on leaves it (see <a href="#ai">AI help</a>). Progress photos are never uploaded.</li>
         <li><strong>Photos (add only)</strong>: only to save a photo or share card you export to your Photos library. The app cannot see the rest of your library.</li>
         <li><strong>Notifications</strong>: reminders you create, and the rest-timer alert, are scheduled on your phone. There are no push notifications from a server.</li>
       </ul>
@@ -100,7 +114,7 @@
 
     <section aria-labelledby="backups">
       <h2 id="backups">Backups you make yourself</h2>
-      <p>“Export backup” creates a file with your data (without progress photos) and hands it to the iOS share sheet. Where it goes (Files, iCloud Drive, AirDrop, e-mail and so on) is your choice, and that service’s terms and privacy policy apply. The file may contain health-related data such as weight and sleep, so keep it somewhere you trust.</p>
+      <p>“Export backup” creates a file with your entries (without progress photos or values read from Apple Health) and hands it to the iOS share sheet. Where it goes (Files, iCloud Drive, AirDrop, e-mail and so on) is your choice, and that service’s terms and privacy policy apply. The file may contain health-related data such as weight and sleep, so keep it somewhere you trust.</p>
     </section>
 
     <section aria-labelledby="delete">
@@ -110,12 +124,12 @@
 
     <section aria-labelledby="rights">
       <h2 id="rights">Your rights</h2>
-      <p>Depending on where you live (for example under the EU and UK GDPR, Israeli privacy law or U.S. state laws), you may have the right to access, correct or delete personal data about you. Since we do not collect or hold any, all of your data is already under your control in the app. You are welcome to contact us with any privacy question.</p>
+      <p>Depending on where you live (for example under the EU and UK GDPR, Israeli privacy law or U.S. state laws), you may have the right to access, correct or delete personal data about you. Since we do not keep any (the AI help server stores nothing you send), all of your data is already under your control in the app. You are welcome to contact us with any privacy question.</p>
     </section>
 
     <section aria-labelledby="children">
       <h2 id="children">Children</h2>
-      <p>The app is not directed at children under 13. It collects no information from anyone, including children.</p>
+      <p>The app is not directed at children under 13. It collects no personal information from anyone, including children.</p>
     </section>
 
     <section aria-labelledby="site">
